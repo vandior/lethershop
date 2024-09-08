@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!-- basic -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- mobile metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   <!-- site metas -->
+   <title>LeatherHoard</title>
+   <meta name="keywords" content="leather, leather products, leather website, e-commerce, selling, leather shop, leather service, buy leather">
+   <meta name="description" content="An Open Source E-commerce website for selling leather products">
+   <meta name="author" content="Kiran Panjwani">
+   <!-- bootstrap css -->
+
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+   <!-- style css -->
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="logincss.css">
+   <link rel="stylesheet" href="css/theme.css">
+   <!-- Responsive-->
+   <link rel="stylesheet" href="css/responsive.css">
+   <!-- favicon -->
+   <link rel="icon" href="images/th.jpg" type="image/gif" />
+   <!-- Tweaks for older IEs-->
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+
+   <!-- theme.js needs to be in the head -->
+   <script src="./js/theme.js" async></script>
+</head>
+<!-- body -->
+
+<body class="main-layout">
+   <button onclick="topFunction()" id="myBtn" title="Go to top">
+   <a href="#">top</a>
+   </button>
+   <!-- loader  -->
+   <div class="loader_bg">
+      <div class="loader-wrapper">
+         <div class="loader-circle"></div>
+         <div class="loader-circle"></div>
+         <div class="loader-circle"></div>
+         <div class="loader-shadow"></div>
+         <div class="loader-shadow"></div>
+         <div class="loader-shadow"></div>
+      </div>
+   </div>
+   <!-- end loader -->
+   <!-- header -->
+
+
+   <!-- Progress bar  -->
+   <div class="progressBar"></div>
+   
+   <header>
+      <!-- header inner -->
+      <div class="header" id="top-of-page">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                  <div class="full">
+                     <div class="center-banner">
+                        <div class="logo">
+                           <a href="index.html"><img src="./images/th.jpg" alt="#" /></a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                  <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04"
+                        aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                     </button>
+                     <div class="collapse navbar-collapse" id="navbarsExample04">
+                        <ul class="navbar-nav mr-auto">
+                           <li class="nav-item active">
+                              <a class="nav-link" href="index.html">Trang chủ</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="#about">Về chúng tôi</a>
+                           </li>
+
+                           <li class="nav-item">
+                              <a class="nav-link" href="#Products">Sản phẩm</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="#ContactUs">Liên hệ</a>
+                           </li>                             
+                              <li class="nav-item">
+                                 <form class="d_flex" role="search">
+                                    <input class="form-control w-45" type="search" placeholder="Tìm kiếm..."
+                                      aria-label="Search">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" fill="currentColor"
+                                      class="bi bi-search my-auto searchicon " viewBox="0 0 16 16" class="m-2">
+                                      <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                    </svg>
+                                    
+                                  
+                                    
+                                 </form>
+                              </li>
+                              
+                               <!-- <form class="d-flex">
+                                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                 <button class="btn btn-outline-success" type="submit">Search</button>
+                               </form> -->
+                           <!-- </li> -->
+                           <li class="nav-item d_none">
+                              <a class="nav-link" href="login.html">Đăng nhập</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </nav>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+   <!-- end header inner -->
+   <!-- end header -->
+   <!-- banner -->
+   <section class="banner_main">
+      <div id="banner1" class="carousel slide" data-ride="carousel">
+         <ol class="carousel-indicators">
+            <li data-target="#banner1" data-slide-to="0" class="active"></li>
+            <li data-target="#banner1" data-slide-to="1"></li>
+            <li data-target="#banner1" data-slide-to="2"></li>
+            <li data-target="#banner1" data-slide-to="3"></li>
+            <li data-target="#banner1" data-slide-to="4"></li>
+         </ol>
+         <div class="carousel-inner">
+            <div class="carousel-item active">
+               <div class="container">
+                  <div class="carousel-caption">
+                     <div class="row">
+                        <div class="col-md-6">
+                           <div class="text-bg">
+                              <span>Hãy trải nghiệm với chúng tôi</span>
+                              <h1>Leather Shop</h1>
+                              <p>Mỗi sản phẩm da do chúng tôi sản xuất và bán đều phản ánh sự sung túc, cả về hình thức cũng như cảm giác.</p>
+                              <a href="#">Mua ngay </a> <a href="#ContactUs">Liên hệ </a>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="text_img">
+                              <figure class="banner-img"><img src="./images/leathers.png" alt="#" /></figure>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="carousel-item">
+               <div class="container">
+                  <div class="carousel-caption">
+                     <div class="row">
+                        <div class="col-md-6">
+                           <div class="text-bg">
+                              <span>Hãy trải nghiệm với chúng tôi</span>
+                              <h1>Leather Shop</h1>
+                              <p>Mỗi sản phẩm da do chúng tôi sản xuất và bán đều phản ánh sự sung túc, cả về hình thức cũng như cảm giác.</p>
+                              <a href="#">Mua ngay </a> <a href="#">Liên hệ </a>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="text_img">
+                              <figure class="banner-img"><img src="./images/leathers.png" alt="leather pieces" /></figure>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="carousel-item">
+               <div class="container">
+                  <div class="carousel-caption">
+                     <div class="row">
+                        <div class="col-md-6">
+                           <div class="text-bg">
+                              <span>Hãy trải nghiệm với chúng tôi</span>
+                              <h1>Leather Shop</h1>
+                              <p>Mỗi sản phẩm da do chúng tôi sản xuất và bán đều phản ánh sự sung túc, cả về hình thức cũng như cảm giác.</p>
+                              <a href="#">Mua ngay </a> <a href="#">Liên hệ </a>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="text_img">
+                              <figure class="banner-img"><img src="./images/leathers.png" alt="leather pieces" /></figure>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="carousel-item">
+               <div class="container">
+                  <div class="carousel-caption">
+                     <div class="row">
+                        <div class="col-md-6">
+                           <div class="text-bg">
+                              <span>Hãy trải nghiệm với chúng tôi</span>
+                              <h1>Leather Shop</h1>
+                              <p>Mỗi sản phẩm da do chúng tôi sản xuất và bán đều phản ánh sự sung túc, cả về hình thức cũng như cảm giác.</p>
+                              <a href="#">Mua ngay </a> <a href="#">Liên hệ </a>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="text_img">
+                              <figure class="banner-img"><img src="./images/leathers.png" alt="leather pieces" /></figure>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="carousel-item">
+               <div class="container">
+                  <div class="carousel-caption">
+                     <div class="row">
+                        <div class="col-md-6">
+                           <div class="text-bg">
+                              <span>Hyax trải nghiệm với chúng tôi</span>
+                              <h1>Leather Shop</h1>
+                              <p>Mỗi sản phẩm da do chúng tôi sản xuất và bán đều phản ánh sự sung túc, cả về hình thức cũng như cảm giác.</p>
+                              <a href="#">Mua ngay </a> <a href="#">Liên hệ </a>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="text_img">
+                              <figure class="banner-img"><img src="./images/leathers.png" alt="leather pieces" /></figure>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <a class="carousel-control-prev" href="#banner1" role="button" data-slide="prev">
+            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+         </a>
+         <a class="carousel-control-next" href="#banner1" role="button" data-slide="next">
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+         </a>
+      </div>
+   </section>
+   <!-- end banner -->
+
+   <!-- company quality services -->
+   <div class="page-section">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-4">
+               <div class="card-service wow fadeInUp">
+                  <div class="service_img">
+                     <img src="./images/quality1.png" alt="">
+                  </div>
+                  <div class="body">
+                     <h5 class="text-secondary">Cung cấp những sản phẩm chất lượng</h5>
+                     <p>Da chất lượng nói lên sự tỉnh táo, linh hoạt và sang trọng vượt thời gian trong ngành thời trang cực kỳ hiện đại ngày nay. Giá trị đồng tiền đã trở thành một xu hướng hiện nay. Khách hàng yêu cầu chất lượng. Làm bạn hài lòng với những sản phẩm da chất lượng là Điểm bán hàng độc nhất của chúng tôi. Chúng tôi khẳng định sự tin tưởng của bạn khi chúng tôi thực hiện lời hứa.</p>
+                     <a href="#" class="btn aboutusbtn mt-3">Đọc thêm</a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-4">
+               <div class="card-service wow fadeInUp">
+                  <div class="service_img">
+                     <img src="./images/quality2.png" alt="">
+                  </div>
+                  <div class="body">
+                     <h5 class="text-secondary">Cập nhật thường xuyên</h5>
+                     <p>Tại Leather Company, chúng tôi sẵn sàng trợ giúp trải nghiệm mua sắm của bạn, hãy liên hệ qua email hoặc qua điện thoại. Nếu một mặt hàng hết hàng, nhóm của chúng tôi sẽ cho bạn biết khi nào chúng tôi có hàng trở lại. Nếu bạn hài lòng hoặc không hài lòng với dịch vụ của chúng tôi vì bất kỳ lý do gì thì vui lòng liên hệ với chúng tôi theo thông tin chi tiết bên dưới.</p>
+                     <a href="#" class="btn aboutusbtn mt-3">Đọc thêm</a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-4">
+               <div class="card-service wow fadeInUp">
+                  <div class="service_img">
+                     <img src="./images/quality3.png" alt="">
+                  </div>
+                  <div class="body">
+                     <h5 class="text-secondary">Sản phẩm cá nhân</h5>
+                     <p>Chúng tôi là chuyên gia về tất cả các sản phẩm da, chúng tôi sẽ giúp bạn tìm kích cỡ chính xác hoặc nếu bạn đang cố gắng tìm một món đồ thời trang có giá quá cao trong các tiệm sang trọng, thì chúng tôi sẽ thử tìm nguồn một mặt hàng tương tự và giá cả phải chăng để phù hợp hoặc chúng tôi cung cấp dịch vụ đặt hàng riêng về đồ da chất lượng</p>
+                     <a href="#" class="btn aboutusbtn mt-3">Đọc thêm</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div> <!-- .container -->
+   </div> <!-- .page-section -->
+
+   <!-- products -->
+   <div class="page-section bg-light" id="Products">
+      <div class="container">
+         <div class="text-center wow fadeInUp">
+            <div class="subhead">Khám phá phong cách mới</div>
+            <h2 class="title-section">Bộ sưu tập của chúng tôi</h2>
+            <div class="divider mx-auto"></div>
+         </div>
+
+         <div class="row">
+            <div class="col-sm-6 col-lg-4 col-xl-3 py-3 wow zoomIn">
+               <div class="categories">
+                  <figure class="headimg">
+                     <img src="./images/Leather-purse.png" alt="Leather purse">
+                  </figure>
+                  <h5>Ví nữ ưa thích</h5>
+                  <p>Mua túi xách nữ chất lượng tốt gồm clutch, túi đeo vai, túi đeo chéo với giá phải chăng.</p>
+               </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-3 py-3 wow zoomIn">
+               <div class="categories">
+                  <figure class="headimg">
+                     <img src="./images/Leather-belt.png" alt="Leather belt">
+                  </figure>
+                  <h5>Thắt lưng nam hai mặt</h5>
+                  <p>Khám phá nhiều phong cách khác nhau từ Thắt lưng trang trọng đến Thắt lưng thông thường đầy phong cách. Lựa chọn đa dạng của chúng tôi bao gồm nhiều kiểu đường khâu và chất lượng da khác nhau, vì vậy luôn có một chiếc thắt lưng cho mọi kiểu dáng</p>
+
+               </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-3 py-3 wow zoomIn">
+               <div class="categories">
+                  <figure class="headimg">
+                     <img src="./images/Leather-shoes.png" alt="Leather shoes">
+                  </figure>
+                  <h5>Giày sang trọng nam</h5>
+                  <p>Mua trực tuyến giày sang trọng nam chất lượng tốt nhất. Mua sang trọng nam với nhiều màu sắc và kiểu dáng đa dạng, chỉ có tại LeatherShop.</p>
+               </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-3 py-3 wow zoomIn">
+               <div class="categories">
+                  <figure class="headimg">
+                     <img src="./images/Leather-bags.png" alt="Leather bags">
+                  </figure>
+                  <h5>Cặp da </h5>
+                  <p>Một chiếc cặp vẫn là một khoản đầu tư tốt vì những lựa chọn này sẽ phù hợp với bất kỳ ai cho bất kỳ mục đích nào, từ thực tập đến dự tiệc nghỉ hưu.
+                  </p>
+               </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-3 py-3 wow zoomIn">
+               <div class="categories">
+                  <figure class="headimg">
+                     <img src="./images/Leather-wallet.jpeg" alt="Leather wallet">
+                  </figure>
+                  <h5>Phụ kiện nam</h5>
+                  <p>Những kiểu ví nam da thật này có kiểu gấp hai chiều truyền thống và nhiều túi và khe bên trong để đựng tiền mặt, thẻ, v.v.</p>
+               </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-3 py-3 wow zoomIn">
+               <div class="categories">
+                  <figure class="headimg">
+                     <img src="./images/Leather-gloves.jpeg" alt="Leather gloves">
+                  </figure>
+                  <h5>Găng tay da cổ điển</h5>
+                  <p>Một chiếc găng tay thực sự độc đáo trong số các đối thủ cạnh tranh, mang đến cho bạn Da thoáng khí để giữ cho bàn tay khô ráo và ấm áp.</p>
+               </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-3 py-3 wow zoomIn">
+               <div class="categories">
+                  <figure class="headimg">
+                     <img src="./images/Leather-bagpacks.png" alt="Leather bagpacks">
+                  </figure>
+                  <h5>Balo thời trang</h5>
+                  <p>Khám phá dòng sản phẩm ba lô da dành cho nam và nữ của chúng tôi, mang đến phong cách, sức mạnh và chức năng đa năng tại một nơi.</p>
+               </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 col-xl-3 py-3 wow zoomIn">
+               <div class="categories">
+                  <figure class="headimg">
+                     <img src="./images/Leather-caps.jpeg" alt="Leather caps">
+                  </figure>
+                  <h5>Mũ da cao cấp</h5>
+                  <p>Được làm từ da thật với thiết kế tinh tế, bảo vệ bạn khỏi thời tiết và thể hiện phong cách cá nhân. Đặt hàng ngay để tận hưởng sự khác biệt!
+                     </p>
+               </div>
+            </div>
+            <div class="col-12">
+               <a href="./html/products.html" class="btn cat-btn mt-3">Xem thêm</a>
+            </div>
+         </div>
+
+      </div> <!-- .container -->
+   </div>
+   <!-- end products -->
+
+
+   <!-- About us  section -->
+   <div class="page-section" id="about">
+      <div class="container">
+         <div class="row align-items-center">
+            <div class="col-lg-6 py-3 wow fadeInUp">
+               <span class="subhead">Về chúng tôi</span>
+               <h2 class="title-section">Công ty LeatherShop </h2>
+               <div class="divider"></div>
+
+               <p>Chuyên cung cấp sản phẩm da chất lượng cao với thiết kế tinh xảo và độ bền vượt trội. </p>
+               <p>Chúng tôi cam kết mang đến sự hài lòng tối đa cho khách hàng qua từng sản phẩm. Khám phá sự khác biệt và đẳng cấp của chúng tôi ngay hôm nay!</p>
+               <a href="./html/about.html" class="btn aboutusbtn mt-3">Xem thêm</a>
+            </div>
+            <div class="col-lg-6 py-3 wow fadeInRight">
+               <figure class="about-img py-3 text-center">
+                  <img src="./images/aboutus_img2.png" alt="">
+               </figure>
+            </div>
+         </div>
+      </div> <!-- .container -->
+   </div> <!-- .page-section -->
+   </div>
+   <!-- end About us  section -->
+
+   <!---offer-->
+   <div class="offer">
+      <div class="container">
+
+         <div class="row align-items-center">
+
+            <figure class="about-img col-lg-6 py-3 wow fadeInUp">
+               <img src="./images/offerjeacket.png" class="offer-img">
+            </figure>
+
+
+            <div  class="col-lg-6 py-3 wow fadeInRight">
+               <p class="offerp"> Có sẵn độc quyền trên LeatherShop</p>
+               <h1>Áo khoác da mùa đông sành điệu</h1>
+               <br>
+               <p class="offerp"> Đây là một trong những loại da phổ biến nhất và giá cả phải chăng nhất được sử dụng trong áo khoác da. Lúc đầu nó rất dai và cứng nhưng khi bạn mặc áo khoác vào, nó sẽ trở nên mềm mại và dẻo dai hơn.
+               </p>
+
+               <a href=""><button class="btn">Mua ngay &#8594;</button>
+               </a>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+   <div class="page-section" id="arrivals">
+      <div class="container">
+         <div class="text-center wow fadeInUp">
+            <div class="subhead">Xem thêm các sản phẩm thú vị khác</div>
+            <h2 class="title-section">Dành cho khách hàng mới</h2>
+            <div class="divider mx-auto"></div>
+         </div>
+
+         <div class="row mt-5">
+            <div class="col-lg-4 py-3 wow fadeInUp">
+               <div class="arrival-card">
+                  <div class="body">
+                     <figure class="arrival_picture">
+                        <img src="./images/arrival_1.jpg" alt="">
+                     </figure>
+                     <div class="bodycont">
+                        <h5 class="arrival-title"><a href="#">Túi xách tay cho nữ</a></h5>
+                        <div class="post-date">Price: <a href="#">400.0000đ</a></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-lg-4 py-3 wow fadeInUp">
+               <div class="arrival-card">
+                  <div class="body">
+                     <figure class="arrival_picture">
+                        <img src="./images/arrival_2.jpg" alt="">
+                     </figure>
+                     <div class="bodycont">
+                        <h5 class="arrival-title"><a href="#">Giày da đơn giản</a></h5>
+                        <div class="post-date">Price: <a href="#">2.000.000đ</a></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-lg-4 py-3 wow fadeInUp">
+               <div class="arrival-card">
+                  <div class="body">
+                     <figure class="arrival_picture">
+                        <img src="./images/arrival_3.jpg" alt="">
+                     </figure>
+                     <div class="bodycont">
+                        <h5 class="arrival-title"><a href="#">Túi đeo</a></h5>
+                        <div class="post-date">Price: <a href="#">600.000đ</a></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <div class="col-12 mt-4 text-center wow fadeInUp">
+               <a href="./html/products.html" class="btn aboutusbtn">Xem thêm</a>
+            </div>
+         </div>
+      </div>
+   </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                     <span class="sr-only">Trước</span>
+                  </a>
+                  <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                     <span class="sr-only">Sau</span>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- end customer -->
+
+   <!--  contact -->
+   <section class="contact" id="ContactUs">
+      <div class="container">
+         <div class="contact-details">
+            <div class="section-header contact-head  text-center">
+               <div class="text-center wow fadeInUp">
+                  <h2 class="title-section">Liên hệ</h2>
+               </div>
+               <p>
+
+                  Nếu bạn có bất kỳ câu hỏi nào về sản phẩm của chúng tôi, vui lòng liên hệ với chúng tôi theo bất kỳ liên kết nào dưới đây hoặc gửi email cho chúng tôi.
+                  Chúng tôi rất vui được giải quyết vấn đề của bạn.
+               <br> Chúng tôi rất sẵn lòng giải quyết vấn đề của bạn. 
+            </p>
+                 
+               </p>
+            </div>
+            <!--/.section-header-->
+            <div class="contact-content">
+               <div class="row">
+                  <div class="col-sm-offset-1 col-sm-5">
+                     <div class="single-contact-box">
+                        <div class="contact-right">
+                           <div class="contact-adress">
+                              <div class="contact-office-address">
+                                 <h3>Thông tin liên lạc</h3>
+                                 <p>
+                                    Địa chỉ: 02 Đinh Tiên Hoàng, Phường Đa kao, Hà Nội
+                                 </p>
+                                 <div class="contact-online-address">
+                                    <div class="single-online-address">
+                                       <i class="fa fa-phone"></i>
+                                       Số điện thoại: +84 565962049
+                                    </div>
+                                    <!--/.single-online-address-->
+
+                                    <div class="single-online-address">
+                                       <i class="fa fa-envelope-o"></i>
+                                       <span>Email: leather.horse@gmail.com</span>
+                                    </div>
+                                    <!--/.single-online-address-->
+                                 </div>
+                                 <!--/.contact-online-address-->
+                              </div>
+                              <!--/.contact-office-address-->
+                              <div class="contact-office-address">
+                                 <h3>Đối tác</h3>
+                                 <div class="contact-icon">
+                                    <ul>
+                                       <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                       <!--/li-->
+                                       <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                                       <!--/li-->
+                                       <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                       <!--/li-->
+                                       <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                       <!--/li-->
+                                    </ul>
+                                    <!--/ul-->
+                                 </div>
+                                 <!--/.contact-icon-->
+                              </div>
+                              <!--/.contact-office-address-->
+
+                           </div>
+                           <!--/.contact-address-->
+                        </div>
+                        <!--/.contact-right-->
+                     </div>
+                     <!--/.single-contact-box-->
+                  </div>
+                  <!--/.col-->
+                  <div class="col-sm-5">
+                     <div class="single-contact-box">
+                        <div class="contact-form">
+                           <h3>Để lại trải nghiệm của bạn ở đây</h3>
+                           <form>
+                              <div class="row">
+                                 <div class="col-sm-6 col-xs-12">
+                                    <div class="form-group">
+                                       <input type="text" class="form-control" id="firstname" placeholder="Họ"
+                                          name="firstname">
+                                    </div>
+                                    <!--/.form-group-->
+                                 </div>
+                                 <!--/.col-->
+                                 <div class="col-sm-6 col-xs-12">
+                                    <div class="form-group">
+                                       <input type="text" class="form-control" id="lastname" placeholder="Tên"
+                                          name="laststname">
+                                    </div>
+                                    <!--/.form-group-->
+                                 </div>
+                                 <!--/.col-->
+                              </div>
+                              <!--/.row-->
+                              <div class="row">
+                                 <div class="col-sm-6 col-xs-12">
+                                    <div class="form-group">
+                                       <input type="email" class="form-control" id="email" placeholder="Email"
+                                          name="email">
+                                    </div>
+                                    <!--/.form-group-->
+                                 </div>
+                                 <!--/.col-->
+                                 <div class="col-sm-6 col-xs-12">
+                                    <div class="form-group">
+                                       <input type="text" class="form-control" id="phone" placeholder="Số điện thoại"
+                                          name="phone">
+                                    </div>
+                                    <!--/.form-group-->
+                                 </div>
+                                 <!--/.col-->
+                              </div>
+                              <!--/.row-->
+                              <div class="row">
+                                 <div class="col-sm-12">
+                                    <div class="form-group">
+                                       <textarea class="form-control" rows="7" id="comment"
+                                          placeholder=""></textarea>
+                                    </div>
+                                    <!--/.form-group-->
+                                 </div>
+                                 <!--/.col-->
+                              </div>
+                              <!--/.row-->
+                              <div class="row">
+                                 <div class="col-sm-12">
+                                    <div class="single-contact-btn ">
+                                       <button class="SubmitBtn" type="button">Gửi</button>
+                                       <button   class="ResetBtn" type="reset">Cài lại</button>
+                                    </div>
+                                    <!--/.single-single-contact-btn-->
+                                 </div>
+                                 <!--/.col-->
+                              </div>
+                              <!--/.row-->
+                           </form>
+                           <!--/form-->
+                        </div>
+                        <!--/.contact-form-->
+                     </div>
+                     <!--/.single-contact-box-->
+                  </div>
+                  <!--/.col-->
+               </div>
+               <!--/.row-->
+            </div>
+            <!--/.contact-content-->
+         </div>
+         <!--/.contact-details-->
+      </div>
+      <!--/.container-->
+
+   </section>
+   <!--/.contact-->
+   <!-- end contact -->
+   <!--  footer -->
+   <footer>
+      <div class="footer">
+         <div class="container">
+            <div class="row">
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                  <a href="#top-of-page">
+                     <img class="logo1" src="./images/th.jpg" alt="#" />
+                  </a>
+                  <ul class="social_icon">
+                     <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                     <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                     <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                     <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                  </ul>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                  <h3>INFO</h3>
+                  <ul class="about_us">
+                     <li><a href="#">Về chúng tôi</a></li>
+                     <li><a href="#">Câu hỏi thường gặp</a></li>
+                     <li><a href="#">Quảng cáo</a></li>
+                     <li><a href="#">Điều khoản và điều kiện</a></li>
+                     <li><a href="PrivacyPolicy.html">Chính sách bảo mật</a></li>
+                     <li><a href="#">Giúp đỡ và hỗ trợ</a></li>
+                  </ul>
+               </div>
+
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                  <h3>Thông tin liên hệ</h3>
+                  <ul class="conta">
+                     <li>
+                        <p>Địa chỉ: 02 Đinh Tiên Hoàng, Phường Đa kao, Hà Nội</p>
+                     </li>
+                     <li>Số điện thoại: +84 565962049</li>
+                     <li>Email: leather.horse@gmail.com</li>
+
+                  </ul>
+               </div>
+               <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                  <form class="bottom_form">
+                     <h3>Hộp thư</h3>
+                     <input class="enter" placeholder="Nhập email của bạn" type="text" name="Enter your email">
+                     <button class="sub_btn">Nộp</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+         <div class="copyright">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12">
+                     <p>Bản quyền © 2022 LeatherHoard, Inc. Mọi quyền được bảo lưu.</a></p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+   <div class="toggle-theme-btn">
+      <i class="fa fa-sun-o"></i>
+      <i class="fa fa-moon-o"></i>
+   </div>
+   <!-- end footer -->
+   <!-- Javascript files-->
+   <script src="./js/jquery.min.js"></script>
+   <script src="./js/bootstrap.bundle.min.js"></script>
+   <!-- sidebar -->
+
+   <script src="./js/custom.js"></script>
+
+   <!-- reiquired js for the page  -->
+   <script src="./js/searchSuggestions.js"> </script>
+   <script src="./js/index.js"></script>
+   <script src="./js/carousal.js"></script>
+
+</body>
+
+</html>
