@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Đăng ký - Camp Rental</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header giống các trang khác -->
+  <header>
+    <h1>Camp Rental</h1>
+    <nav>
+      <a href="index.html">Trang chủ</a>
+      <a href="products.html">Sản phẩm</a>
+      <a href="services.html">Dịch vụ</a>
+      <a href="cart.html">Giỏ hàng</a>
+      <a href="login.html" id="login-link">Đăng nhập</a>
+      <a href="#" id="logout-link" style="display:none;">Đăng xuất</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Đăng ký</h2>
+    <form id="register-form">
+      <input type="text" name="name" placeholder="Họ tên" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="password" name="password" placeholder="Mật khẩu" required>
+      <input type="text" name="phone" placeholder="SĐT">
+      <input type="text" name="address" placeholder="Địa chỉ">
+      <button type="submit">Đăng ký</button>
+    </form>
+    <p>Đã có tài khoản? <a href="login.html">Đăng nhập</a></p>
+  </main>
+
+  <!-- Footer chuẩn web -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4>Camp Rental</h4>
+        <p>Cho thuê trang thiết bị cắm trại, lều, bàn ghế, đèn pin và dụng cụ dã ngoại.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Liên hệ</h4>
+        <p>Email: support@camprental.com</p>
+        <p>Điện thoại: 0905 123 456</p>
+        <p>Địa chỉ: Hà Nội, Việt Nam</p>
+      </div>
+      <div class="footer-section">
+        <h4>Liên kết nhanh</h4>
+        <a href="index.html">Trang chủ</a><br>
+        <a href="products.html">Sản phẩm</a><br>
+        <a href="services.html">Dịch vụ</a><br>
+        <a href="cart.html">Giỏ hàng</a>
+      </div>
+    </div>
+    <p class="footer-bottom">&copy; 2025 Camp Rental. All rights reserved.</p>
+  </footer>
+
+  <script src="js/register.js"></script>
+</body>
+</html>
